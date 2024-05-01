@@ -1,0 +1,165 @@
+.modalWrapper{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(20,19,19,0.9);
+}
+
+.authContainer{
+    width: 618px;
+    height: 482px;
+    box-shadow: 0px 4px 30px 0px #FFFFFF40;
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.authContainer>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.authContainer>div>h1{
+    font-family: DM Sans;
+    font-weight: 700;
+    color: #000000;
+
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; 
+    margin-top: 3rem;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.input>label {
+    font-family: DM Sans;
+    font-weight: 700;
+    color: #000000;
+}
+
+.input>input{
+    height: 2rem;
+    width: 15rem;
+    border: 1px solid #000000;
+}
+
+.input>input::placeholder{
+    font-family: DM Sans;
+    font-weight: 700;
+    color: #8E8E8E;
+    padding-left: 5%;
+}
+
+.btn {
+    margin-top: 4rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #73ABFF;
+    border-radius: 20px;
+    font-size: 1rem;
+    border: none;
+    font-family: DM Sans;
+    font-weight: 700;
+    color: #000000;
+}
+
+.roundedCrossIcon {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    cursor: pointer;
+}
+
+.passwordToggleContainer {
+    position: absolute;
+    /* right: 2.85rem; */
+    right: 6.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    color: #000000;
+}
+
+/* .passwordInput {
+    position: relative;
+} */
+
+@media(max-width: 600px) {
+    
+    .authContainer {
+        width: 80%;
+        height: 60vh;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+
+    .input>input{
+        width: 70vw;
+    }
+
+    .roundedCrossIcon {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        cursor: pointer;
+    }
+
+    .btn {
+        margin-top: 4rem;
+        padding: 0.7rem 2rem;
+        background-color: #73ABFF;
+        border-radius: 20px;
+        font-size: 1.2rem;
+        border: none;
+        font-family: DM Sans;
+        font-weight: 700;
+        color: #FFFFFF;
+    }
+
+    .input>input::placeholder{
+        color: #444242;
+    }
+
+    .authContainer>div>h1{
+        font-family: DM Sans;
+        font-weight: 700;
+        color: #000000;
+        font-size: 7vw;
+    }
+
+    .passwordToggleContainer {
+        position: absolute;
+        /* right: 2.85rem; */
+        right: 1.76rem;
+        top: 19rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        color: #000000;
+    }
+    
+
+}

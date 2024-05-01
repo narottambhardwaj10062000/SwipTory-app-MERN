@@ -1,0 +1,184 @@
+.imagesContent {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  margin-top: 2rem;
+  /* margin-bottom: 4rem; */
+  padding-left: 2rem;
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.singleImageCard {
+  width: 241px;
+  height: 241px;
+  position: relative;
+}
+
+.singleImageCard:hover {
+  border: 5px solid #00acd2;
+  border-radius: 36px;
+}
+
+.singleImage {
+  width: 100%;
+  height: 100%;
+  filter: brightness(50%);
+  border-radius: 36px;
+}
+
+.imgText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-family: DM Sans;
+  font-size: 2vw;
+  font-weight: 700;
+  line-height: 39.06px;
+  text-align: center;
+}
+
+/* ---------------------------- */
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  /* display: block; */
+}
+
+.foodStoryContainer > h2 {
+  text-align: center;
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 2rem;
+}
+
+.foodStoryContainer>button {
+  padding: 0.7rem 2rem;
+  color: #FFFFFF;
+  font-family: DM Sans;
+  background-color: #FF7373;
+  border-radius: 20px;
+  border: none;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 1.5rem;
+}
+
+.yourStoryContainer > h2{
+  text-align: center;
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 2rem;
+}
+
+.yourStoryContainer > button{
+  padding: 0.7rem 2rem;
+  color: #FFFFFF;
+  font-family: DM Sans;
+  background-color: #FF7373;
+  border-radius: 20px;
+  border: none;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 1.5rem;
+}
+
+
+.medicalStoryContainer {
+  text-align: center;
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 2rem;
+}
+
+.cardsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+  /* height: 40vh; */
+  margin-top: 2rem;
+}
+
+.noStoriesAvailable{
+  /* align-self: center; */
+  width: 100%;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #8E8E8E;
+}
+
+@media (max-width: 600px) {
+  .imagesContent {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    /* min-width: 100vw; */
+    overflow-x: scroll;
+    scrollbar-width: none;
+    margin-top: 6rem;
+    margin-bottom: 1.3rem;
+    padding-left: 1rem;
+  }
+  .singleImageCard {
+    width: 30vw;
+    height: 6rem;
+    /* position: relative; */
+  }
+  .singleImage {
+    width: 30vw;
+    height: 6rem;
+    filter: brightness(50%);
+    border-radius: 12px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cardsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    /* grid-column-gap: 3rem; */
+    /* height: 40vh; */
+    margin-top: 2rem;
+  }
+
+  .yourStoryContainer {
+    display: none;
+  }
+
+  .imgText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff;
+    font-family: DM Sans;
+    font-size: 4vw;
+    font-weight: 700;
+    line-height: 39.06px;
+    text-align: center;
+  }
+}

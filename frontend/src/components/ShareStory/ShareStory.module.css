@@ -1,0 +1,99 @@
+.modalWrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(20, 19, 19, 0.9);
+  z-index: 1;
+}
+
+.storyContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.747); */
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.story {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.storyArrow {
+  margin: 8rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.storyContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.storyHeaderIcon {
+  display: flex;
+  justify-content: space-between;
+  padding: 4.2rem 1.4rem 1.3rem 1.4rem;
+  background-color: black;
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 1);
+}
+
+.storyHeaderIcon img {
+  cursor: pointer;
+}
+
+.storyBottom {
+  padding: 0rem 1.4rem 2rem 1.4rem;
+  background-color: black;
+  box-shadow: 0 0 15px 15px rgba(0, 0, 0, 1);
+}
+
+.storyText {
+  padding-bottom: 1rem;
+}
+
+.storyText h2 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.storyText p {
+  font-size: 0.7rem;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.storyBottomIcon {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2.4rem;
+}
+
+.storyBottomIcon img {
+  cursor: pointer;
+}
+
+.likeCount {
+  font-size: 0.6rem;
+  color: white;
+  margin-left: 0.4rem;
+}
+
+

@@ -1,0 +1,96 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  gap: 2rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.smallContent {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.smallContent > label {
+  width: 150px;
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.44px;
+  /* text-align: center; */
+}
+
+.inputField {
+  width: 250px;
+  padding: 0.3rem;
+  border: 1px solid #000000;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.textField {
+  resize: none;
+  width: 250px;
+  height: 4rem;
+  border: 1px solid #000000;
+  padding: 0.3rem;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.selectTag {
+  width: 250px;
+  padding: 0.3rem;
+  border: 1px solid #000000;
+  font-family: DM Sans;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+@media(max-width: 600px) {
+    .smallContent {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem;
+        gap: 2rem;
+        /* align-items: center; */
+        justify-content: center;
+      }
+
+      .inputField {
+        width: 100%;
+        padding: 0.3rem;
+        border: 1px solid #000000;
+        font-family: DM Sans;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .textField {
+        resize: none;
+        width: 100%;
+        height: 4rem;
+        border: 1px solid #000000;
+        padding: 0.3rem;
+        font-family: DM Sans;
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .selectTag {
+        width: 100%;
+        padding: 0.3rem;
+        border: 1px solid #000000;
+        font-family: DM Sans;
+        font-size: 15px;
+        font-weight: 700;
+      }
+}

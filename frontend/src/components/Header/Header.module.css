@@ -1,0 +1,227 @@
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  /* background-color: red; */
+  box-shadow: 0px 4px 15px 0px #00000026;
+  font-family: DM Sans;
+  font-weight: 700;
+  /* font-size: 32px; */
+  color: #000000;
+  padding-left: 2rem;
+  padding-right: 0.6rem;
+  position: relative;
+}
+
+.btnContainer {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnContainer > button {
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+  /* background-color: red; */
+  padding: 0.5rem;
+  width: 9rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.navBar > button {
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #ff7373;
+  padding: 0.5rem;
+  width: 9rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.navBar > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.menuIcon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logoutMenu {
+  height: 8rem;
+  width: 14rem;
+  /* background-color: red; */
+  position: absolute;
+  /* bottom: 2rem; */
+  top: 100%;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.logoutMenu > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logoutMenu > div > p {
+  color: #000000;
+}
+
+.logoutMenu > div > button {
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1rem;
+  background-color: #ff7373;
+  padding: 0.5rem;
+  width: 9rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.mobileRightSide {
+  display: none;
+}
+
+@media (max-width: 600px) {
+
+  .headerContainer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    /* background-color: red; */
+    box-shadow: 0px 4px 15px 0px #00000026;
+    font-family: DM Sans;
+    font-weight: 700;
+    /* font-size: 32px; */
+    color: #000000;
+    padding-left: 2rem;
+    padding-right: 0.6rem;
+    z-index: 1;
+    background-color: white;
+    /* position: relative; */
+    top: 0;
+    width: 100%;
+  }
+
+  .rightSide {
+    display: none;
+  }
+
+  .mobileRightSide {
+    display: flex;
+  }
+
+  .mobileMenuIcon {
+    font-size: 1.5rem;
+    margin-right: 0.9rem;
+  }
+
+  .mobileMenuContainer {
+    position: fixed;
+    top: 7.9%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    padding: 2rem 0rem;
+    width: 100%;
+    /* background-color: red; */
+    box-shadow: 0px 4px 4px 0px #00000040;
+    color: #ffffff;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .mobileMenuContainer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .mobileMenuContainer > div > button {
+    font-family: DM Sans;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #ff7373;
+    padding: 0.5rem;
+    width: 9rem;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .menuBtnContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .menuBtnContainer>button {
+    font-family: DM Sans;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1rem;
+    background-color: #ff7373;
+    padding: 0.5rem;
+    width: 9rem;
+    border: none;
+    border-radius: 20px;
+  }
+
+  .crossIcon {
+    position: fixed;
+    right: 1.5rem;
+    top: 6rem;
+    /* font-color: #000000; */
+  }
+
+  .namePic{
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .namePic>img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  .namePic>p{
+    color: #000000;
+    font-family: DM Sans;
+    font-weight: 700;
+  }
+
+  .loggedOutStateMenu {
+    background-color: white;
+  }
+}

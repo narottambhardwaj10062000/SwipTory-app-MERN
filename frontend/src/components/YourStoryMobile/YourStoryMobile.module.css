@@ -1,0 +1,35 @@
+.container > h1 {
+  font-family: DM Sans;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+.cardsContainer {
+  display: grid;
+  padding: 0% 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 3rem;
+  grid-column-gap: 3rem;
+  /* height: 40vh; */
+  margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+  .cardsContainer {
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.3rem; */
+  }
+
+  .container > h1 {
+    font-family: DM Sans;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    margin-top: 12vh;
+    margin-bottom: 5vh;
+  }
+}
